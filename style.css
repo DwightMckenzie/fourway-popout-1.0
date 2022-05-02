@@ -1,0 +1,125 @@
+html {
+	box-sizing: content-box;
+}
+
+body {
+	background-color: #aaaaaa;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.container {
+	width: 500px;
+	height: 500px;
+	/* background-color: greenyellow; */
+	margin: auto;
+}
+
+.popout-wrppr {
+	width: 500px;
+	height: 500px;
+	clip: rect(0px, 500px, 500px, 0px);
+	/*! box-shadow: inset 0px 0px 10px crimson; */
+	/* background-image: url(imgs/High-resolution-highres-pictures.jpg); */
+	background-image: url(imgs/js-backing.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: inset 0px 0px 10px #555;
+
+	position: absolute;
+	
+}
+
+/* triggeres */
+.trggrs {
+	z-index: 5;
+}
+.trggr {
+	background-color: rgba(134, 180, 134, 0.507);
+	margin: auto;
+	padding: 5px 0px;
+	text-align: center;
+	text-transform: uppercase;
+	position: absolute;
+	z-index: 10;
+	transition: all 0.5s;
+}
+.trggr:hover {
+	/* filter: brightness(4); */
+	color: #ffffff;
+}
+.trggrs .top {
+	width: 200px;
+	padding: 5px 0px;
+	top: 0px;
+	left: 30%;
+	text-align: center;
+}
+.trggrs .right {
+	height: 200px;
+	padding: 0px 5px;
+	transform: rotate(180deg);
+	top: 30%;
+	left: 472px;
+	writing-mode: tb-rl;
+	text-align: center;
+}
+.trggrs .bottom {
+	width: 200px;
+	padding: 5px 0px;
+	top: 473px;
+	left: 30%;
+	text-align: center;
+}
+.trggrs .left {
+	height: 200px;
+	top: 30%;
+	left: 0px;
+	padding: 0px 5px;
+	writing-mode: tb-rl;
+	text-align: center;
+}
+
+
+/* slides  */
+.slides {
+	z-index: 5;
+}
+.slides .slide {
+	filter: opacity(0.5);
+	text-align: center;
+	background-color: orange;
+	transition: all 0.5s;
+}
+.slide {
+	position: absolute;
+}
+.slides>.top {
+	width: 500px;
+	height: 0px;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+.slides>.right {
+	width: 500px;
+	height: 500px;
+	top: 0px;
+	left: 500px;
+	transform: rotate(180deg);
+	overflow: hidden;
+	writing-mode: tb;
+}
+.slides>.bottom {
+	width: 500px;
+	height: 0px;
+	top: 500px;
+	left: 0px;
+}
+.slides>.left {
+	width: 500px;
+	top: 0px;
+	left: -500px;
+	writing-mode: tb;
+	height: 500px;
+}
