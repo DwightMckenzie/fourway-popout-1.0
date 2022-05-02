@@ -10,7 +10,6 @@ body {
 .container {
 	width: 500px;
 	height: 500px;
-	/* background-color: greenyellow; */
 	margin: auto;
 }
 
@@ -18,16 +17,12 @@ body {
 	width: 500px;
 	height: 500px;
 	clip: rect(0px, 500px, 500px, 0px);
-	/*! box-shadow: inset 0px 0px 10px crimson; */
-	/* background-image: url(imgs/High-resolution-highres-pictures.jpg); */
 	background-image: url(imgs/js-backing.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	box-shadow: inset 0px 0px 10px #555;
-
 	position: absolute;
-	
 }
 
 /* triggeres */
@@ -45,7 +40,6 @@ body {
 	transition: all 0.5s;
 }
 .trggr:hover {
-	/* filter: brightness(4); */
 	color: #ffffff;
 }
 .trggrs .top {
